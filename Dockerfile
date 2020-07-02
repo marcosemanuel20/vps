@@ -58,8 +58,6 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-
 
 RUN sudo npm install -g peerflix-server
 
-RUN wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && apt install ./teamviewer_amd64.deb
-
 RUN sudo add-apt-repository ppa:obsproject/obs-studio \
      && sudo apt-get update && sudo apt-get install -y obs-studio
 
