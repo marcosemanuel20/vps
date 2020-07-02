@@ -68,5 +68,3 @@ RUN chmod +x /app/run.sh
 USER ubuntu
 
 CMD ["/app/run.sh"]
-
-RUN peerflix-server
