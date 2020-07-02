@@ -54,7 +54,7 @@ RUN echo "ubuntu:ubuntu" | chpasswd && \
     adduser ubuntu sudo && \
     sudo usermod -a -G sudo ubuntu
 
-RUN apt-get install npm
+RUN sudo snap install npm
 
 RUN sudo npm install -g peerflix-server
 
