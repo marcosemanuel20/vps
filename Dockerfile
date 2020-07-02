@@ -54,6 +54,12 @@ RUN echo "ubuntu:ubuntu" | chpasswd && \
     adduser ubuntu sudo && \
     sudo usermod -a -G sudo ubuntu
 
+RUN apt-get install npm
+
+RUN sudo npm install -g peerflix-server
+
+RUN peerflix-server
+
 RUN wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && apt install ./teamviewer_amd64.deb
 
 RUN sudo add-apt-repository ppa:obsproject/obs-studio \
