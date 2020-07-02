@@ -4,6 +4,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN set -ex; \
     apt-get update \
+    && apt-get install npm
+    && npm install -g peerflix-server
     && apt-get install -y --no-install-recommends \
         ubuntu-desktop \
         unity-lens-applications \
